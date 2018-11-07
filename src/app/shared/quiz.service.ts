@@ -15,7 +15,7 @@ export class QuizService {
   correctAnswerCount: number = 0;
 
   //---------------- Helper Methods---------------
-  constructor(private http: HttpClient) { }
+  constructor(public http: HttpClient) { }
   displayTimeElapsed() {
     return Math.floor(this.seconds / 3600) + ':' + Math.floor(this.seconds / 60) + ':' + Math.floor(this.seconds % 60);
   }
